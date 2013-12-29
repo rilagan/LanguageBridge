@@ -8,14 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1FF893D0187058DB00480C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893CF187058DB00480C35 /* Foundation.framework */; };
-		1FF893D5187058DB00480C35 /* LanguageBridge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FF893D4187058DB00480C35 /* LanguageBridge.h */; };
-		1FF893D7187058DB00480C35 /* LanguageBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893D6187058DB00480C35 /* LanguageBridge.m */; };
 		1FF893DE187058DB00480C35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893DD187058DB00480C35 /* XCTest.framework */; };
 		1FF893DF187058DB00480C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893CF187058DB00480C35 /* Foundation.framework */; };
 		1FF893E1187058DB00480C35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893E0187058DB00480C35 /* UIKit.framework */; };
 		1FF893E4187058DB00480C35 /* libLanguageBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893CC187058DB00480C35 /* libLanguageBridge.a */; };
 		1FF893EA187058DB00480C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FF893E8187058DB00480C35 /* InfoPlist.strings */; };
-		1FF893EC187058DB00480C35 /* LanguageBridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893EB187058DB00480C35 /* LanguageBridgeTests.m */; };
+		1FF893F91870591600480C35 /* NSArrayRubyishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893F51870591600480C35 /* NSArrayRubyishTest.m */; };
+		1FF893FA1870591600480C35 /* NSDictionaryRubyishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893F61870591600480C35 /* NSDictionaryRubyishTest.m */; };
+		1FF893FB1870591600480C35 /* NSStringJavaishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893F71870591600480C35 /* NSStringJavaishTest.m */; };
+		1FF893FC1870591600480C35 /* NSStringRubyishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893F81870591600480C35 /* NSStringRubyishTest.m */; };
+		1FF894071870594600480C35 /* NSArray+Rubyish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893FE1870594600480C35 /* NSArray+Rubyish.m */; };
+		1FF894081870594600480C35 /* NSArray+Rubyish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF893FE1870594600480C35 /* NSArray+Rubyish.m */; };
+		1FF894091870594600480C35 /* NSDictionary+Rubyish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894001870594600480C35 /* NSDictionary+Rubyish.m */; };
+		1FF8940A1870594600480C35 /* NSDictionary+Rubyish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894001870594600480C35 /* NSDictionary+Rubyish.m */; };
+		1FF8940B1870594600480C35 /* NSString+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894021870594600480C35 /* NSString+Base.m */; };
+		1FF8940C1870594600480C35 /* NSString+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894021870594600480C35 /* NSString+Base.m */; };
+		1FF8940D1870594600480C35 /* NSString+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894041870594600480C35 /* NSString+Javaish.m */; };
+		1FF8940E1870594600480C35 /* NSString+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894041870594600480C35 /* NSString+Javaish.m */; };
+		1FF8940F1870594600480C35 /* NSString+Rubyish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894061870594600480C35 /* NSString+Rubyish.m */; };
+		1FF894101870594600480C35 /* NSString+Rubyish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF894061870594600480C35 /* NSString+Rubyish.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +46,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				1FF893D5187058DB00480C35 /* LanguageBridge.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +55,25 @@
 		1FF893CC187058DB00480C35 /* libLanguageBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLanguageBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF893CF187058DB00480C35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FF893D3187058DB00480C35 /* LanguageBridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LanguageBridge-Prefix.pch"; sourceTree = "<group>"; };
-		1FF893D4187058DB00480C35 /* LanguageBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageBridge.h; sourceTree = "<group>"; };
-		1FF893D6187058DB00480C35 /* LanguageBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageBridge.m; sourceTree = "<group>"; };
 		1FF893DC187058DB00480C35 /* LanguageBridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageBridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF893DD187058DB00480C35 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1FF893E0187058DB00480C35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1FF893E7187058DB00480C35 /* LanguageBridgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LanguageBridgeTests-Info.plist"; sourceTree = "<group>"; };
 		1FF893E9187058DB00480C35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1FF893EB187058DB00480C35 /* LanguageBridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageBridgeTests.m; sourceTree = "<group>"; };
+		1FF893F51870591600480C35 /* NSArrayRubyishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayRubyishTest.m; sourceTree = "<group>"; };
+		1FF893F61870591600480C35 /* NSDictionaryRubyishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryRubyishTest.m; sourceTree = "<group>"; };
+		1FF893F71870591600480C35 /* NSStringJavaishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringJavaishTest.m; sourceTree = "<group>"; };
+		1FF893F81870591600480C35 /* NSStringRubyishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringRubyishTest.m; sourceTree = "<group>"; };
+		1FF893FD1870594600480C35 /* NSArray+Rubyish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Rubyish.h"; sourceTree = "<group>"; };
+		1FF893FE1870594600480C35 /* NSArray+Rubyish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Rubyish.m"; sourceTree = "<group>"; };
+		1FF893FF1870594600480C35 /* NSDictionary+Rubyish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Rubyish.h"; sourceTree = "<group>"; };
+		1FF894001870594600480C35 /* NSDictionary+Rubyish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Rubyish.m"; sourceTree = "<group>"; };
+		1FF894011870594600480C35 /* NSString+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base.h"; sourceTree = "<group>"; };
+		1FF894021870594600480C35 /* NSString+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base.m"; sourceTree = "<group>"; };
+		1FF894031870594600480C35 /* NSString+Javaish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Javaish.h"; sourceTree = "<group>"; };
+		1FF894041870594600480C35 /* NSString+Javaish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Javaish.m"; sourceTree = "<group>"; };
+		1FF894051870594600480C35 /* NSString+Rubyish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Rubyish.h"; sourceTree = "<group>"; };
+		1FF894061870594600480C35 /* NSString+Rubyish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Rubyish.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +131,16 @@
 		1FF893D1187058DB00480C35 /* LanguageBridge */ = {
 			isa = PBXGroup;
 			children = (
-				1FF893D4187058DB00480C35 /* LanguageBridge.h */,
-				1FF893D6187058DB00480C35 /* LanguageBridge.m */,
+				1FF893FD1870594600480C35 /* NSArray+Rubyish.h */,
+				1FF893FE1870594600480C35 /* NSArray+Rubyish.m */,
+				1FF893FF1870594600480C35 /* NSDictionary+Rubyish.h */,
+				1FF894001870594600480C35 /* NSDictionary+Rubyish.m */,
+				1FF894011870594600480C35 /* NSString+Base.h */,
+				1FF894021870594600480C35 /* NSString+Base.m */,
+				1FF894031870594600480C35 /* NSString+Javaish.h */,
+				1FF894041870594600480C35 /* NSString+Javaish.m */,
+				1FF894051870594600480C35 /* NSString+Rubyish.h */,
+				1FF894061870594600480C35 /* NSString+Rubyish.m */,
 				1FF893D2187058DB00480C35 /* Supporting Files */,
 			);
 			path = LanguageBridge;
@@ -128,7 +157,10 @@
 		1FF893E5187058DB00480C35 /* LanguageBridgeTests */ = {
 			isa = PBXGroup;
 			children = (
-				1FF893EB187058DB00480C35 /* LanguageBridgeTests.m */,
+				1FF893F51870591600480C35 /* NSArrayRubyishTest.m */,
+				1FF893F61870591600480C35 /* NSDictionaryRubyishTest.m */,
+				1FF893F71870591600480C35 /* NSStringJavaishTest.m */,
+				1FF893F81870591600480C35 /* NSStringRubyishTest.m */,
 				1FF893E6187058DB00480C35 /* Supporting Files */,
 			);
 			path = LanguageBridgeTests;
@@ -224,7 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FF893D7187058DB00480C35 /* LanguageBridge.m in Sources */,
+				1FF894071870594600480C35 /* NSArray+Rubyish.m in Sources */,
+				1FF8940F1870594600480C35 /* NSString+Rubyish.m in Sources */,
+				1FF8940B1870594600480C35 /* NSString+Base.m in Sources */,
+				1FF8940D1870594600480C35 /* NSString+Javaish.m in Sources */,
+				1FF894091870594600480C35 /* NSDictionary+Rubyish.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +268,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FF893EC187058DB00480C35 /* LanguageBridgeTests.m in Sources */,
+				1FF8940E1870594600480C35 /* NSString+Javaish.m in Sources */,
+				1FF8940C1870594600480C35 /* NSString+Base.m in Sources */,
+				1FF893F91870591600480C35 /* NSArrayRubyishTest.m in Sources */,
+				1FF893FB1870591600480C35 /* NSStringJavaishTest.m in Sources */,
+				1FF894081870594600480C35 /* NSArray+Rubyish.m in Sources */,
+				1FF894101870594600480C35 /* NSString+Rubyish.m in Sources */,
+				1FF893FC1870591600480C35 /* NSStringRubyishTest.m in Sources */,
+				1FF8940A1870594600480C35 /* NSDictionary+Rubyish.m in Sources */,
+				1FF893FA1870591600480C35 /* NSDictionaryRubyishTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
