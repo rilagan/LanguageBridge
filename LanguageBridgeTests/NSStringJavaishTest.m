@@ -49,11 +49,18 @@
 }
 
 - (void)testIndexOf {
-    
+    XCTAssertEqual(NSMakeRange(0, 5), [@"hello" indexOf:@"hello"]);
+    XCTAssertEqual(NSMakeRange(0, 1), [@"hello" indexOf:@"h"]);
+    XCTAssertEqual(NSMakeRange(1, 1), [@"hello" indexOf:@"e"]);
+    XCTAssertEqual(NSMakeRange(2, 1), [@"hello" indexOf:@"l"]);
+    XCTAssertEqual(NSMakeRange(3, 2), [@"hello" indexOf:@"lo"]);
+    XCTAssertEqual(NSMakeRange(NSNotFound, 0), [@"hello" indexOf:@"a"]);
+    XCTAssertEqual(NSMakeRange(NSNotFound, 0), [@"hello" indexOf:@"lllo"]);
 }
 
 - (void)testIndexOfFromIndex {
-    
+    XCTAssertEqual(NSMakeRange(NSNotFound, 0), [@"hello" indexOf:@"a" fromIndex:0]);
+    XCTAssertEqual(NSMakeRange(8, 1), [@"test case" indexOf:@"e" fromIndex:2]);
 }
 
 - (void)testIsEmpty {
@@ -62,11 +69,16 @@
 }
 
 - (void)testLastIndexOf {
-    
+    XCTAssertEqual(NSMakeRange(0, 5), [@"hello" lastIndexOf:@"hello"]);
+    XCTAssertEqual(NSMakeRange(3, 1), [@"hello" lastIndexOf:@"l"]);
+    XCTAssertEqual(NSMakeRange(NSNotFound, 0), [@"hello" lastIndexOf:@"x"]);
 }
 
 - (void)testLastIndexOfFromIndex {
-    
+    XCTAssertEqual(NSMakeRange(NSNotFound, 0), [@"hello" lastIndexOf:@"o" fromIndex:3]);
+    XCTAssertEqual(NSMakeRange(4, 1), [@"hello" lastIndexOf:@"o" fromIndex:4]);
+    XCTAssertEqual(NSMakeRange(1, 1), [@"test case" lastIndexOf:@"e" fromIndex:7]);
+    XCTAssertEqual(NSMakeRange(8, 1), [@"test case" lastIndexOf:@"e" fromIndex:8]);
 }
 
 - (void)testMatches {
@@ -103,6 +115,11 @@
     XCTAssertEqualObjects(@"substring", [@"string after substring" substringFromIndex:13 endIndex:22]);
     XCTAssertEqualObjects(@"str", [@"string after substring" substringFromIndex:0 endIndex:3]);
     
+}
+
+- (void)testStartsWith {
+    XCTAssert([@"hello" startsWith:@"he"]);
+    XCTAssert(![@"hello" startsWith:@"k"]);
 }
 
 - (void)testTrim {

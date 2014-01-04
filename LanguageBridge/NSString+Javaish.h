@@ -53,13 +53,19 @@
 - (BOOL)equalsIgnoreCase:(NSString *)otherString;
 
 /**
+ * Calls rangeOfString
  * \code
+ * [@"hello" indexOf:@"lllo"] == NSMakeRange(NSNotFound, 0)
+ * [@"hello" indexOf:@"e"] == NSMakeRange(1, 1)
  * \endcode
  */
 - (NSRange)indexOf:(NSString *)str;
 
 /**
+ * Calls rangeOfString
  * \code
+ * [@"hello" indexOf:@"lllo" fromIndex:0] == NSMakeRange(NSNotFound, 0)
+ * [@"test case" indexOf:@"e" fromIndex:2] == NSMakeRange(8, 1)
  * \endcode
  */
 - (NSRange)indexOf:(NSString *)str fromIndex:(NSUInteger)idx;
@@ -73,13 +79,20 @@
 - (BOOL)isEmpty;
 
 /**
+ * Calls rangeOfString with option NSBackwardsSearch
  * \code
+ * [@"hello" lastIndexOf:@"hello"] == NSMakeRange(0, 5)
+ * [@"hello" lastIndexOf:@"l"] == NSMakeRange(3, 1)
+ * [@"hello" lastIndexOf:@"x"] == NSMakeRange(NSNotFound, 0)
  * \endcode
  */
 - (NSRange)lastIndexOf:(NSString *)str;
 
 /**
+ * Calls rangeOfString with option NSBackwardsSearch
  * \code
+ * [@"hello" lastIndexOf:@"o" fromIndex:3] == NSMakeRange(NSNotFound, 0)
+ * [@"test case" lastIndexOf:@"e" fromIndex:7] == NSMakeRange(1, 1)
  * \endcode
  */
 - (NSRange)lastIndexOf:(NSString *)str fromIndex:(NSUInteger)idx;
@@ -115,7 +128,10 @@
 - (NSString *)replaceFirst:(NSString *)pattern with:(NSString *)replacement;
 
 /**
+ * Calls hasPrefix
  * \code
+ * [@"hello" startsWith:@"he"] == YES
+ * [@"hello" startsWith:@"k"] == NO
  * \endcode
  */
 - (BOOL)startsWith:(NSString *)prefix;

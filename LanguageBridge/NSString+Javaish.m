@@ -32,11 +32,11 @@
 }
 
 - (NSRange)indexOf:(NSString *)str {
-    return [self indexOfString:str];
+    return [self rangeOfString:str];
 }
 
 - (NSRange)indexOf:(NSString *)str fromIndex:(NSUInteger)idx {
-    return [self rangeOfString:str options:NSRegularExpressionSearch range:NSMakeRange(idx, [self length])];
+    return [self rangeOfString:str options:0 range:NSMakeRange(idx, [self length]-idx)];
 }
 
 - (BOOL)isEmpty {
@@ -48,7 +48,7 @@
 }
 
 - (NSRange)lastIndexOf:(NSString *)str fromIndex:(NSUInteger)idx {
-    return [self rangeOfString:str options:NSBackwardsSearch range:NSMakeRange(idx, [self length])];
+    return [self rangeOfString:str options:NSBackwardsSearch range:NSMakeRange(0, idx+1)];
 }
 
 - (BOOL)matches:(NSString *)pattern {
