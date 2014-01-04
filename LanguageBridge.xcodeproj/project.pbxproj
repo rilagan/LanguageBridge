@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FD3A57A187793E80037EDB3 /* NSDictionary+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A579187793E80037EDB3 /* NSDictionary+Javaish.m */; };
+		1FD3A57B187793E80037EDB3 /* NSDictionary+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A579187793E80037EDB3 /* NSDictionary+Javaish.m */; };
+		1FD3A57E187898DA0037EDB3 /* NSMutableDictionary+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A57D187898DA0037EDB3 /* NSMutableDictionary+Javaish.m */; };
+		1FD3A57F187898DA0037EDB3 /* NSMutableDictionary+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A57D187898DA0037EDB3 /* NSMutableDictionary+Javaish.m */; };
+		1FD3A58118789AF40037EDB3 /* NSDictionaryJavaishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A58018789AF40037EDB3 /* NSDictionaryJavaishTest.m */; };
+		1FD3A58418789E700037EDB3 /* NSArray+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A58318789E700037EDB3 /* NSArray+Javaish.m */; };
+		1FD3A58518789E700037EDB3 /* NSArray+Javaish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A58318789E700037EDB3 /* NSArray+Javaish.m */; };
+		1FD3A5871878A1C90037EDB3 /* NSArrayJavaishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3A5861878A1C90037EDB3 /* NSArrayJavaishTest.m */; };
 		1FF893D0187058DB00480C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893CF187058DB00480C35 /* Foundation.framework */; };
 		1FF893DE187058DB00480C35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893DD187058DB00480C35 /* XCTest.framework */; };
 		1FF893DF187058DB00480C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF893CF187058DB00480C35 /* Foundation.framework */; };
@@ -52,6 +60,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FD3A578187793E80037EDB3 /* NSDictionary+Javaish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Javaish.h"; sourceTree = "<group>"; };
+		1FD3A579187793E80037EDB3 /* NSDictionary+Javaish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Javaish.m"; sourceTree = "<group>"; };
+		1FD3A57C187898DA0037EDB3 /* NSMutableDictionary+Javaish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Javaish.h"; sourceTree = "<group>"; };
+		1FD3A57D187898DA0037EDB3 /* NSMutableDictionary+Javaish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Javaish.m"; sourceTree = "<group>"; };
+		1FD3A58018789AF40037EDB3 /* NSDictionaryJavaishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryJavaishTest.m; sourceTree = "<group>"; };
+		1FD3A58218789E700037EDB3 /* NSArray+Javaish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Javaish.h"; sourceTree = "<group>"; };
+		1FD3A58318789E700037EDB3 /* NSArray+Javaish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Javaish.m"; sourceTree = "<group>"; };
+		1FD3A5861878A1C90037EDB3 /* NSArrayJavaishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayJavaishTest.m; sourceTree = "<group>"; };
 		1FF893CC187058DB00480C35 /* libLanguageBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLanguageBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF893CF187058DB00480C35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FF893D3187058DB00480C35 /* LanguageBridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LanguageBridge-Prefix.pch"; sourceTree = "<group>"; };
@@ -131,10 +147,16 @@
 		1FF893D1187058DB00480C35 /* LanguageBridge */ = {
 			isa = PBXGroup;
 			children = (
+				1FD3A58218789E700037EDB3 /* NSArray+Javaish.h */,
+				1FD3A58318789E700037EDB3 /* NSArray+Javaish.m */,
 				1FF893FD1870594600480C35 /* NSArray+Rubyish.h */,
 				1FF893FE1870594600480C35 /* NSArray+Rubyish.m */,
+				1FD3A578187793E80037EDB3 /* NSDictionary+Javaish.h */,
+				1FD3A579187793E80037EDB3 /* NSDictionary+Javaish.m */,
 				1FF893FF1870594600480C35 /* NSDictionary+Rubyish.h */,
 				1FF894001870594600480C35 /* NSDictionary+Rubyish.m */,
+				1FD3A57C187898DA0037EDB3 /* NSMutableDictionary+Javaish.h */,
+				1FD3A57D187898DA0037EDB3 /* NSMutableDictionary+Javaish.m */,
 				1FF894011870594600480C35 /* NSString+Base.h */,
 				1FF894021870594600480C35 /* NSString+Base.m */,
 				1FF894031870594600480C35 /* NSString+Javaish.h */,
@@ -157,11 +179,13 @@
 		1FF893E5187058DB00480C35 /* LanguageBridgeTests */ = {
 			isa = PBXGroup;
 			children = (
-				1FF893F51870591600480C35 /* NSArrayRubyishTest.m */,
-				1FF893F61870591600480C35 /* NSDictionaryRubyishTest.m */,
 				1FF893F71870591600480C35 /* NSStringJavaishTest.m */,
+				1FF893F51870591600480C35 /* NSArrayRubyishTest.m */,
+				1FD3A58018789AF40037EDB3 /* NSDictionaryJavaishTest.m */,
+				1FF893F61870591600480C35 /* NSDictionaryRubyishTest.m */,
 				1FF893F81870591600480C35 /* NSStringRubyishTest.m */,
 				1FF893E6187058DB00480C35 /* Supporting Files */,
+				1FD3A5861878A1C90037EDB3 /* NSArrayJavaishTest.m */,
 			);
 			path = LanguageBridgeTests;
 			sourceTree = "<group>";
@@ -259,6 +283,9 @@
 				1FF894071870594600480C35 /* NSArray+Rubyish.m in Sources */,
 				1FF8940F1870594600480C35 /* NSString+Rubyish.m in Sources */,
 				1FF8940B1870594600480C35 /* NSString+Base.m in Sources */,
+				1FD3A57E187898DA0037EDB3 /* NSMutableDictionary+Javaish.m in Sources */,
+				1FD3A57A187793E80037EDB3 /* NSDictionary+Javaish.m in Sources */,
+				1FD3A58418789E700037EDB3 /* NSArray+Javaish.m in Sources */,
 				1FF8940D1870594600480C35 /* NSString+Javaish.m in Sources */,
 				1FF894091870594600480C35 /* NSDictionary+Rubyish.m in Sources */,
 			);
@@ -269,12 +296,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FF8940E1870594600480C35 /* NSString+Javaish.m in Sources */,
+				1FD3A5871878A1C90037EDB3 /* NSArrayJavaishTest.m in Sources */,
+				1FD3A58118789AF40037EDB3 /* NSDictionaryJavaishTest.m in Sources */,
 				1FF8940C1870594600480C35 /* NSString+Base.m in Sources */,
 				1FF893F91870591600480C35 /* NSArrayRubyishTest.m in Sources */,
 				1FF893FB1870591600480C35 /* NSStringJavaishTest.m in Sources */,
 				1FF894081870594600480C35 /* NSArray+Rubyish.m in Sources */,
+				1FD3A57F187898DA0037EDB3 /* NSMutableDictionary+Javaish.m in Sources */,
 				1FF894101870594600480C35 /* NSString+Rubyish.m in Sources */,
+				1FD3A58518789E700037EDB3 /* NSArray+Javaish.m in Sources */,
 				1FF893FC1870591600480C35 /* NSStringRubyishTest.m in Sources */,
+				1FD3A57B187793E80037EDB3 /* NSDictionary+Javaish.m in Sources */,
 				1FF8940A1870594600480C35 /* NSDictionary+Rubyish.m in Sources */,
 				1FF893FA1870591600480C35 /* NSDictionaryRubyishTest.m in Sources */,
 			);
@@ -453,6 +485,7 @@
 				1FF893F1187058DB00480C35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FF893F2187058DB00480C35 /* Build configuration list for PBXNativeTarget "LanguageBridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +494,7 @@
 				1FF893F4187058DB00480C35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
