@@ -179,13 +179,13 @@
 		1FF893E5187058DB00480C35 /* LanguageBridgeTests */ = {
 			isa = PBXGroup;
 			children = (
+				1FD3A5861878A1C90037EDB3 /* NSArrayJavaishTest.m */,
 				1FF893F71870591600480C35 /* NSStringJavaishTest.m */,
 				1FF893F51870591600480C35 /* NSArrayRubyishTest.m */,
 				1FD3A58018789AF40037EDB3 /* NSDictionaryJavaishTest.m */,
 				1FF893F61870591600480C35 /* NSDictionaryRubyishTest.m */,
 				1FF893F81870591600480C35 /* NSStringRubyishTest.m */,
 				1FF893E6187058DB00480C35 /* Supporting Files */,
-				1FD3A5861878A1C90037EDB3 /* NSArrayJavaishTest.m */,
 			);
 			path = LanguageBridgeTests;
 			sourceTree = "<group>";
