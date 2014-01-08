@@ -26,12 +26,14 @@ Ruby
 Copy NSString+Rubyish.* and NSString+Base.* Files
 Copy NSArray+Rubyish.*
 
+```objective-c
 #import "NSString+Rubyish.h"
 #import "NSArray+Rubyish.h"
 
 [[@"hello there" split:@" "] each:^(id obj) {
     NSLog(@"%@", obj);
 }];
+```objective-c
 
 Output
 ------
