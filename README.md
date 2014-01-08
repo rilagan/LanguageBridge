@@ -33,9 +33,10 @@ Copy NSArray+Rubyish.*
 [[@"hello there" split:@" "] each:^(id obj) {
     NSLog(@"%@", obj);
 }];
-```objective-c
+```
 
 Output
 ------
 hello
+
 there
