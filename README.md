@@ -2,7 +2,7 @@
 LanguageBridge
 --------------
 
-This library provides a familar api (for core classes) for those who are new to objective c, 
+This library provides a familar api (for foundation classes) for those who are new to objective c, 
 or for those looking for functionality similar to other languages.
 
 Core Classes Supported
@@ -19,6 +19,21 @@ Ruby
 
 How to Use
 ----------
+
+Java
+----
+
+Copy NSString+Javaish.* and NSString+Base.* Files
+
+```objective-c
+if ([@"hhhello" matches:@"\\D+ello"]) {
+    NSLog(@"Matched!");
+}
+```
+
+Output
+------
+Matched!
 
 Ruby
 ----
