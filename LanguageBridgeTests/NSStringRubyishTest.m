@@ -153,6 +153,8 @@
 - (void)testScan {
     NSArray *matches = @[@"ell", @"ell"];
     XCTAssertEqualObjects(matches, [@"hello dell" scan:@"el*"]);
+    matches = @[@"a", @"b"];
+    XCTAssertEqualObjects(matches, [@"ab" scan:@"\\D"]);
 }
 
 - (void)testSize {
@@ -181,6 +183,8 @@
 }
 
 - (void)testStrip {
+   XCTAssertEqualObjects(@"a", [@"     a    " strip]);        
+   XCTAssertEqualObjects(@"", [@"         " strip]);
    XCTAssertEqualObjects(@"goodbye", [@"\tgoodbye\r\n" strip]);
 }
 
