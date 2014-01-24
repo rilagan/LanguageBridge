@@ -269,7 +269,7 @@
 }
 
 - (NSArray *)select:(BOOL(^)(id obj))block {
-    return [self select:block];
+    return [self findAll:block];
 }
 
 - (NSArray *)slice:(int)start length:(int)length {
